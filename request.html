@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кітапқа сұраныс беру | Электрондық кітапхана</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Сұраныс беру беті</h1>
+    <nav>
+      <a href="index.html">Басты бет</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="detail.html">Кітап туралы</a>
+      <a href="request.html">Сұраныс беру</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Кітап алуға өтініш толтыру</h2>
+    <form action="#" method="get">
+      <div>
+        <label for="name">Аты-жөніңіз:</label>
+        <input type="text" id="name" name="name" required minlength="3" placeholder="Аты-жөніңізді жазыңыз">
+      </div>
+      
+      <div>
+        <label for="email">Email поштаңыз:</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com">
+      </div>
+      
+      <div>
+        <label for="book">Кітапты таңдаңыз:</label>
+        <select id="book" name="book" required>
+          <option value="">-- Таңдаңыз --</option>
+          <option value="hp1">Гарри Поттер және Философиялық тас (1-бөлім)</option>
+          <option value="hp2">Гарри Поттер және Құпиялар бөлмесі (2-бөлім)</option>
+          <option value="hp3">Гарри Поттер және Азкабан тұтқыны (3-бөлім)</option>
+          <option value="hp4">Гарри Поттер және Отты кубок (4-бөлім)</option>
+          <option value="hp5">Гарри Поттер және Самұрық ордені (5-бөлім)</option>
+          <option value="hp6">Гарри Поттер және Жартылай қанды ханзада (6-бөлім)</option>
+          <option value="hp7">Гарри Поттер және Өлім сыйлықтары (7-бөлім)</option>
+          <option value="abai">Абай жолы (1-том)</option>
+          <option value="koja">Менің атым Қожа</option>
+          <option value="ustaz">Алғашқы ұстаз</option>
+        </select>
+      </div>
+      
+      <div>
+        <label for="comment">Пікір немесе мақсаты:</label>
+        <textarea id="comment" name="comment" rows="4" placeholder="Қосымша түсініктеме..."></textarea>
+      </div>
+      
+      <button type="submit">Сұраныс жіберу</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Электрондық кітапхана</p>
+  </footer>
+</body>
+</html>
